@@ -162,6 +162,51 @@ li a{
     justify-content: center;
     align-items: center;
 }
+
+.clientes{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 30px;
+}
+.noticias{
+    background-color: #f6bfd9;
+}
+.noticias-eventos{
+    height: 120px;
+}
+.noticias-eventos p{
+    color: #dc234f;
+}
+.promociones-condiciones p{
+    color: #094963;
+}
+.promociones{
+    background-color: #98cde4;
+}
+.img-noticias, .img-promociones{
+    width: 100%;
+    height: 100%;
+}
+.btn-eventos{
+    border: 2px solid #dc234f;
+    text-decoration: none;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-right: 20px;
+    color: #dc234f;
+}
+
+.btn-terminos{
+    border: 2px solid #094963;
+    text-decoration: none;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-right: 20px;
+    color: #094963;
+}
+
 footer{
     margin-top: 50px;
     padding: 20px 65px;
