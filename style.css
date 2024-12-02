@@ -34,13 +34,13 @@ h2,p{
     padding-right: 10px;
 }
 .localizar::before {
-    content: ''; /* Necesario para mostrar el pseudo-elemento */
+    content: ''; 
     background-image: url('https://www.starbucks.com.mx/static/images/stores.svg');
-    background-size: contain; /* Asegura que la imagen se ajuste al tamaño del pseudo-elemento */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    width: 18px; /* Ajusta el tamaño de la imagen */
-    height: 18px; /* Ajusta el tamaño de la imagen */
-    display: inline-block; /* Hace que el pseudo-elemento ocupe espacio */
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 18px; 
+    height: 18px; 
+    display: inline-block; 
 }
 .barra{
     font-weight: bold;
@@ -48,7 +48,7 @@ h2,p{
     align-items: center;
     padding: 16px 180px;
     background-color: white;
-    box-shadow: 0px -36px 76px gray;
+    box-shadow: 0 4px 4px -4px #ccc;
 }
 .barra-menu {
     display: flex;
@@ -90,7 +90,6 @@ li a{
     border: 2px solid black;
     padding: 5px 14px;
     border-radius: 20px;
-    margin-right: 20px;
 }
 .btn-conoce{
     border: 2px solid white;
@@ -178,9 +177,9 @@ footer{
     text-align: start;
 }
 .separador {
-    border: none; /* Elimina el borde predeterminado */
-    border-top: 1px solid #ccc; /* Añade una línea superior */
-    margin: 20px auto; /* Espacio arriba y abajo de la línea */
+    border: none; 
+    border-top: 1px solid #ccc; 
+    margin: 20px auto; 
     width: 88%;
 }
 
@@ -191,19 +190,19 @@ footer{
     padding: 15px 0px;
 }
 .social-icon {
-    width: 30px;  /* Ajusta el tamaño del icono (diámetro del círculo) */
-    height: 30px; /* Mantén el tamaño igual para que sea circular */
-    border-radius: 50%; /* Hace que el contorno sea circular */
+    width: 30px;  
+    height: 30px; 
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Asegura que el contenido no sobresalga */
-    background-color: #f0f0f0; /* Opcional: color de fondo para el círculo */
+    overflow: hidden; 
+    background-color: #f0f0f0; 
 }
 
 .social-icon i {
-    font-size: 33px; /* Asegura que el icono ocupe todo el círculo */
-    width: 63px;  /* Hace que el icono ocupe todo el ancho del contenedor */
+    font-size: 33px; 
+    width: 63px;  
 }
 
 .avisos p{
