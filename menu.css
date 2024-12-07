@@ -1,5 +1,8 @@
+*{
+    box-sizing: border-box;
+}
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 body{
     margin: 0px;    
@@ -12,10 +15,16 @@ header{
     flex-direction: row;
 }
 h2{
-    font-size: calc(1.0875rem + 0.70vw);
+    font-size: 1.37rem;
+    margin: 16px 33px;
+    font-weight: normal;
+
 }
 h3{
-    font-size: calc(1.0875rem + 0.30vw);
+    font-size: 1.2rem;
+}
+h4{
+    font-size: 1.1rem;
 }
 
 p{
@@ -173,14 +182,6 @@ li a{
 
 }
 
-
-
-
-
-
-
-
-
 /*Footer*/
 footer{
     margin-top: 50px;
@@ -232,4 +233,43 @@ footer{
     font-size: 17px;
     word-spacing: 10px; 
     text-align: center;
+}
+
+@media (max-width: 768px){
+.barra{
+    padding: 5px 0;
+    width: 100%;
+}    
+.main-container{
+    margin: 20px 0 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1240px;
+}
+.tipos-container{
+    width: 50%;
+}
+.tipos-bebidas{
+    margin: 20px 0;
+    gap: 0;
+}
+.img-bebidas, .img-complementos{
+    width: 150px;
+    height: auto;
+}
+.disfrutalos h2{
+    font-size: 25px;
+}
+.disfrutalos{
+    width: 100%;
+}
+
+footer{
+    padding: 0 15px;
+}
+
+
+
+
+
 }

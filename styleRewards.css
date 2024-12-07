@@ -1,5 +1,8 @@
+*{
+    box-sizing: border-box;
+}
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 body{
     margin: 0px;
@@ -13,16 +16,20 @@ h2{
 
 }
 h3{
-    font-size: calc(1.0875rem + 0.30vw);
+    font-size: 1.2rem;
+}
+h4{
+    font-size: 1.1rem;
 }
 
 p{
-    font-size: 11px;
-    padding: 0px 18px;
+    padding: 0px 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 .beneficios-txt{
-    font-size: 15px;
-    margin: 16px 0;
+    margin: 0 0 24px;
 }
 .beneficios-txt::after {
     content: ''; 
@@ -66,7 +73,6 @@ span{
     padding: 20px 120px;
     background-color: white;
     box-shadow: 0 4px 4px -4px #ccc;
-    box-sizing: border-box;
     z-index: 2;
 } 
 .barra-menu {
@@ -138,7 +144,6 @@ main{
 }
 .left-container{
     position: fixed;
-    box-sizing: border-box;
     background:linear-gradient(0deg, rgb(29,57,50)0%, rgb(10,105,75)100%) ;
     width: 41.666667%;
     height: 95vh;
@@ -202,24 +207,28 @@ main{
     width: auto;
     padding: 40px;
 }
+.unete-container{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
 .unete-cont{
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.unete-container{
-    display: flex;
-    justify-content: center;
-}
 .unete-container img{
-    max-width: 70%;
+    max-width: 90%;
   max-height: 120px;
 }
 .unete-arriba, .unete-abajo {
     display: flex;
     flex-wrap: wrap;
     font-size: 18px;
+}
+.txt-unete-abajo{
+    width: 100%;
 }
 .unete-info {
     width: 163px;
@@ -236,9 +245,10 @@ main{
 .estrellas-container{
     max-width: 55%;
 }
-.estrellas-container p{
-    font-weight: bold;
-}
+
+.estrellas-container h2{
+    margin: 0;
+   }
 .estrellas img{
     width: 100%;
   max-width: 400px;
@@ -270,12 +280,14 @@ main{
     max-width: 58.333333%;
   }
   
-.recompensas-pdre{
+  .recompensas-pdre{
     width: 75%;
     display: flex;
     flex-direction: column;
-}
-
+   }
+   .recompensas-pdre h3{
+    margin: 0;
+   }
   .recompensas-item {
     display: flex;
     align-items: center;
@@ -290,6 +302,7 @@ main{
     width: 100%;
     height: auto;
   }
+
   
   .recompensas-texto {
     font-size: 1em;
@@ -330,20 +343,26 @@ iframe{
     font-size: 40px;
     background-color: rgba(241, 240, 235);
 }
-
+.txt-ordena{
+    margin: 0 0 30px;
+}
+.txt-ordena h3{
+    margin: 0 0 45px;
+}
 .odenar-container {
     display: flex;
     flex-wrap: wrap; 
-    gap: 16px; 
+   margin-top: 20px;
     justify-content: center;
+    margin: 20px;
 }
   
 .odenar-container > section {
     flex: 1 1 calc(33.33% - 16px); 
-    box-sizing: border-box; 
     text-align: center; 
-    padding: 0 10px;
     text-align: start;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .odenar-container > .estrella {
     flex: 1 1 calc(25% - 16px);
@@ -359,15 +378,21 @@ iframe{
 }
 .estrella-centro p, .celular-centro p{
     padding: 0px;
-    font-size: 12px;
+}
+.estrella-arriba{
+    margin: 25px 0;
+}
+.estrella-abajo{
+    margin: 40px 0;
 }
 .img-estrella{
     width: 35px;
     height: auto;
 }
 .img-celular{
-    width: 50px;
+    width: 85px;
     height: auto;
+    padding: 6px;
 }
 .personaliza {
     display: flex;                
@@ -385,15 +410,19 @@ iframe{
     text-align: center;
 }
 .img-tarjetas{
-    width: 50%;
+    width: 59%;
 }
 .img-gif{
     width: 100%;
-    height: auto;
+    height: 100%;
+}
+.regala{
+    width: 41%;
 }
 
 .regala p{
     font-size: 13px;
+    padding: 0;
 }
 
 /*Recompensas y beneficios*/
@@ -409,14 +438,19 @@ iframe{
     align-items: center;
 }
 .img-gifrecombene{
-    width: 220px;
+    width: 270px;
+}
+.img-recombene{
+    width: 65%;
+    display: flex;
+    gap: 53px;
+    margin: 15px 0 45px 0;
 }
 .img-recombene img{
-    width: 105px;
+    width: 40%;
 }
 .txt-recombene{
-    font-size: 13px;
-    width: 374px;
+    width: 90%;
 }
 
 /*Conoce más*/
@@ -435,14 +469,14 @@ iframe{
     width: 100%;
 }
 .img-conoce{
-   width: 40%;
+   width: 90%;
 }
 .txt-conoce{
     width: 60%;
     text-align: start;
 }
 .txt-conoce p{
-    font-size: 13px;
+    padding: 0;
 }
 
 /*Letras logo*/
@@ -461,7 +495,6 @@ iframe{
 /*Footer*/
 footer{
     margin-top: 50px;
-    padding: 20px 65px;
     box-shadow: 0px 61px 72px gray;
 }
 
@@ -509,6 +542,107 @@ footer{
     word-spacing: 10px; 
 }
 
-.footer-starbucks p, .footer-starbucks h3{
-    font-size: 13px;
+
+
+/* Dispositivos móviles */
+@media (max-width: 768px) {
+    .body{
+        font-family: SODO Sans,sans-serif,Arial;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .barra{
+        padding: 10px 0;
+        width: 100%;
+    }
+    .rewards-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .img-rewards img{
+        max-width: 310px;
+    }
+    .left-container{
+        position: static;
+        width: 100%;
+        height: 83vh;
+    }
+    .information{
+        top: 33px;
+    }
+    .img-unete{
+        height: 257px;
+        margin-top: 47px;
+    }
+    .img-unete img{
+        margin-top: 15px;
+    }
+    .saludo h2{
+        font-size: 27pt;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        gap: 25px;
+    }
+    .right-container{
+        margin: 0;
+    }
+    .unete-container{
+        padding: 40px;
+    }
+    .unete-cont{
+        width: 100%;
+    }
+    .unete-arriba{
+        width: 90%;
+    }
+    .unete-info{
+        width: 50%;
+        padding: 8px;
+    }
+    .estrellas-container{
+        max-width: 100%;
+    }
+    .estrellas-container h2{
+        margin-bottom: 25px;
+    }
+    .estrellas-abajo{
+        margin-top: 35px;
+    }
+    .estrella-arriba p, .estrella-abajo p{
+        max-width: 100%;
+    }
+    .ocultar{
+        display: none;
+    }
+    .estrellas img{
+        max-width: 655px;
+    }
+    .recompensas-pdre{
+        width: 90%;
+    }
+    .odenar-container{
+        flex-direction: column;
+        margin: 0;
+    }
+    .odenar-container > section{
+        padding: 0;
+    }
+    .recombene{
+        padding: 24px;
+    }
+    .recombene-container{
+        width: 85%;
+    }
+    .conoce-mas{
+        width: 100%;
+    }
+    .txt-conoce{
+        width: 85%;
+    }
+
 }
